@@ -1,0 +1,75 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar style */
+.navbar {
+    z-index: 3;
+    background-color: #0033ab;
+}
+
+* {
+    z-index: 2;
+}
+
+.img-hero {
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.logout-btn {
+    background-color: #fff;
+    font-weight: 500;
+    border: none;
+    color: #0033ab;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.logo img {
+    filter: drop-shadow(0 0 2px white);
+    width: 50px;
+    height: 40px;
+}
+
+/* Main */
+main {
+    padding-top: 80px; /* tinggi navbar */
+    padding: 40px 60px;
+    min-height: 95vh;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+    background-color: #0033ab;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

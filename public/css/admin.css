@@ -1,0 +1,162 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #0033ab;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.logo img {
+    filter: drop-shadow(0 0 2px white);
+    width: 40px;
+    height: 40px;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.menu-sidebar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 25px;
+    transition: 0.3s;
+}
+
+.menu-sidebar li img.icon {
+    width: 22px;
+    height: 22px;
+}
+
+.menu-sidebar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.menu-sidebar li:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #ffffff;
+}
+
+.menu-sidebar li.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #ffffff;
+}
+
+/* Profile */
+.profile {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-name {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logout-link {
+    font-size: 0.85rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+.main {
+    margin-left: 250px;
+    padding: 30px;
+    min-height: 100vh;
+    background-color: #f5f6fa;
+}
+
+.card-report {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    height: 188px;
+    background: white;
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #0033a0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.card .jumlah {
+    font-size: 50px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #0033ab;
+    font-weight: 500;
+}
+
+/* Chart Styles */
+.chart-wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+}

@@ -1,0 +1,152 @@
+@media screen and (max-width: 922px) {
+    .hero-tagline h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .hero-tagline p {
+        line-height: 25px;
+    }
+    .img-hero {
+        width: 80%;
+        height: auto;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .sub-title {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    .card-jaminan {
+        height: 250px;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    .deskripsi {
+        font-size: 16px;
+    }
+    .card-terkirim h4 {
+        font-size: 26px;
+    }
+    .card-terkirim p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .font-copyright {
+        font-size: 11px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-tagline h1 {
+        line-height: 52px;
+    }
+    .hero-tagline p {
+        margin-bottom: 30px;
+        line-height: 25px;
+    }
+    .img-hero {
+        width: 75%;
+        height: auto;
+    }
+    /* tentang */
+    h2 {
+        font-size: 32px;
+    }
+    .sub-title {
+        font-size: 16px;
+    }
+    .button-lg-primary {
+        width: 150px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .card-tentang {
+        padding: 20px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    .card-jaminan {
+        padding: 20px;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    .deskripsi {
+        font-size: 16px;
+    }
+    .card-terkirim h4 {
+        font-size: 20px;
+    }
+    .card-terkirim p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .font-copyright {
+        font-size: 10px;
+    }
+    /* #kontak h5 {
+    font-size: 20px;
+  }
+  .sub-kontak {
+    font-size: 12px;
+  }
+  .nomor-kontak {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .email-kontak {
+    font-size: 16px;
+    margin-left: 10px;
+  } */
+}
+
+@media screen and (max-width: 360px) {
+    .hero-tagline h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .hero-tagline p {
+        line-height: 20px;
+    }
+    .img-hero {
+        width: 90%;
+        height: auto;
+        min-height: calc(100vh - 80px);
+    }
+    /* tentang */
+    h2 {
+        font-size: 26px;
+    }
+    .sub-title {
+        font-size: 12px;
+    }
+    /* jaminan */
+    .card-jaminan {
+        padding: 20px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    .icon-selesai {
+        width: 200px;
+    }
+    .card-terkirim p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .font-copyright {
+        font-size: 8px;
+        padding: 5px;
+    }
+}
