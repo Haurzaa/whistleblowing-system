@@ -44,7 +44,7 @@ Proyek ini dikembangkan secara mandiri sebagai bagian dari kegiatan Kerja Prakti
 
 ---
 ##  Pengembang
-Nama: Haura Zahra
-Program Studi: Informatika
-Kegiatan: Kerja Praktik
-Tahun: 2026
+- Nama: Haura Zahra
+- Program Studi: Informatika
+- Kegiatan: Kerja Praktik
+- Tahun: 2026
