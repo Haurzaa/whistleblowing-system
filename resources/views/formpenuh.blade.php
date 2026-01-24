@@ -195,14 +195,14 @@
           <label for="dokumen" class="form-label">Dokumen Pendukung</label>
           <input class="form-control" type="file" id="dokumen" name="dokumen_pendukung" />
           <small class="text-muted"
-            >Format yang diperbolehkan: PDF, JPG, PNG, SLSX (maks. 5MB)</small>
+            >Format yang diperbolehkan: PDF, JPG, PNG, SLSX, MP3, MP4 (maks. 5MB)</small>
             <div id="fileError" class="text-danger mt-1" style="display: none;"></div>
 </div>
 
 <script>
 document.getElementById('dokumen').addEventListener('change', function() {
     const file = this.files[0];
-    const allowedExtensions = ['pdf', 'jpg', 'jpeg', 'png', 'xlsx'];
+    const allowedExtensions = ['pdf', 'jpg', 'jpeg', 'png', 'xlsx', 'mp3', 'mp4'];
     const fileError = document.getElementById('fileError');
     fileError.style.display = 'none';
     fileError.textContent = '';

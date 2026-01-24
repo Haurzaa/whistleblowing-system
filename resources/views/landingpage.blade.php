@@ -237,7 +237,7 @@
                 alt=""
                 class="position-absolute start-0 top-0 kriteria-icon"
               />
-              <h5 class="mt-3">EVIDENCI</h5>
+              <h5 class="mt-3">EVIDENCE</h5>
               <p class="mt-3">
                 Dilengkapi dengan bukti dugaan pelanggaran (dokumen/gambar) yang
                 mendukung

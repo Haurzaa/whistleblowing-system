@@ -10,6 +10,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+
     <!-- Responsive -->
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
@@ -80,16 +85,32 @@
         >
     </div>
 
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input 
-            type="password" 
-            name="password" 
-            id="password" 
-            class="form-control @if(session('error')) is-invalid @endif" 
-            required
-        >
-    </div>
+    <div class="mb-3 position-relative">
+  <label for="password" class="form-label">Password</label>
+
+  <input
+    type="password"
+    name="password"
+    id="password"
+    class="form-control pe-5 @if(session('error')) is-invalid @endif"
+    required
+  >
+
+  <span
+    id="togglePassword"
+    class="position-absolute"
+    style="
+      right: 15px;
+      top: 38px;   /* ← ini yang bikin sejajar input */
+      cursor: pointer;
+      display: none;
+      color: #6c757d;
+    "
+  >
+    <i class="bi bi-eye"></i>
+  </span>
+</div>
+    
 
     <button type="submit" class="btn btn-primary w-100 mt-4">Login</button>
 </form>
@@ -158,5 +179,37 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+const passwordInput = document.getElementById("password");
+const togglePassword = document.getElementById("togglePassword");
+const icon = togglePassword.querySelector("i");
+
+// icon muncul kalau ada isi
+passwordInput.addEventListener("input", function () {
+  if (this.value.length > 0) {
+    togglePassword.style.display = "block";
+  } else {
+    togglePassword.style.display = "none";
+    passwordInput.type = "password";
+    icon.classList.remove("bi-eye-slash");
+    icon.classList.add("bi-eye");
+  }
+});
+
+// toggle show / hide
+togglePassword.addEventListener("click", function () {
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    icon.classList.remove("bi-eye");
+    icon.classList.add("bi-eye-slash");
+  } else {
+    passwordInput.type = "password";
+    icon.classList.remove("bi-eye-slash");
+    icon.classList.add("bi-eye");
+  }
+});
+</script>
+
   </body>
 </html>

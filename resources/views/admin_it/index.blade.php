@@ -25,8 +25,26 @@
                 <input type="text" name="username" class="form-control" placeholder="Username" required>
             </div>
             <div class="col-md-5">
-                <input type="password" name="password" class="form-control" placeholder="Password" required>
-            </div>
+    <div class="position-relative">
+        <input
+            type="password"
+            name="password"
+            id="adminPassword"
+            class="form-control pe-5"
+            placeholder="Password"
+            required
+        >
+
+        <span
+            id="toggleAdminPassword"
+            class="position-absolute top-50 end-0 translate-middle-y me-3"
+            style="cursor:pointer; display:none; z-index:10;"
+        >
+            <i class="bi bi-eye"></i>
+        </span>
+    </div>
+</div>
+
             <div class="col-md-2">
                 <button type="submit" class="btn btn-primary w-100">Tambah Admin</button>
             </div>
@@ -58,4 +76,31 @@
         </tbody>
     </table>
 </div>
+
+<script>
+const adminPassword = document.getElementById("adminPassword");
+const toggleAdminPassword = document.getElementById("toggleAdminPassword");
+const adminIcon = toggleAdminPassword.querySelector("i");
+
+adminPassword.addEventListener("input", function () {
+    if (this.value.length > 0) {
+        toggleAdminPassword.style.display = "block";
+    } else {
+        toggleAdminPassword.style.display = "none";
+        this.type = "password";
+        adminIcon.className = "bi bi-eye";
+    }
+});
+
+toggleAdminPassword.addEventListener("click", function () {
+    if (adminPassword.type === "password") {
+        adminPassword.type = "text";
+        adminIcon.className = "bi bi-eye-slash";
+    } else {
+        adminPassword.type = "password";
+        adminIcon.className = "bi bi-eye";
+    }
+});
+</script>
+
 @endsection

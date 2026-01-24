@@ -37,7 +37,7 @@ public function store(Request $request)
         'tempat_kejadian' => 'required|string',
         'tanggal_kejadian' => 'required|date',
         'isi_laporan' => 'required|string',
-        'dokumen_pendukung' => 'nullable|file|max:2048',
+        'dokumen_pendukung' => 'nullable|file||mimes:pdf,jpg,png,xlsx,mp3,mp4|max:5120',
     ]);
 
     // Simpan dokumen kalau ada
@@ -80,7 +80,7 @@ return redirect()->route('form.selesai')->with('success', 'Laporan berhasil diki
             'tempat_kejadian'   => 'required|string',
             'tanggal_kejadian'  => 'required|date',
             'isi_laporan'       => 'required|string',
-            'dokumen_pendukung' => 'nullable|file|mimes:pdf,jpg,png|max:5120',
+            'dokumen_pendukung' => 'nullable|file|mimes:pdf,jpg,png,xlsx,mp3,mp4|max:5120',
         ]);
 
         // Simpan dokumen kalau ada
