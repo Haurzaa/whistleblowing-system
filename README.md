@@ -33,8 +33,8 @@ Sistem ini dikembangkan dalam rangka memenuhi tugas **Kerja Praktik (KP)** dan b
 
 ## 👤 Akun Dummy (Untuk Pengujian)
 Admin
-- **Username**: admin
-- **Password**: password123
+- **Username**: -
+- **Password**: -
 - git clone https://github.com/Haurzaa/whistleblowing-system.git
 
 ---
